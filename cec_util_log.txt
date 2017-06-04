@@ -1,0 +1,478 @@
+No device type given. Using 'recording device'
+CEC Parser created - libCEC version 4.0.2
+opening a connection to the CEC adapter...
+DEBUG:   [               3]	Broadcast (F): osd name set to 'Broadcast'
+DEBUG:   [               4]	Open - vc_cec initialised
+DEBUG:   [               4]	logical address changed to Free use (e)
+NOTICE:  [               4]	connection opened
+DEBUG:   [               4]	processor thread started
+DEBUG:   [               4]	<< Broadcast (F) -> TV (0): POLL
+DEBUG:   [               4]	initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+TRAFFIC: [               4]	<< e0
+DEBUG:   [              35]	>> POLL sent
+DEBUG:   [              35]	TV (0): device status changed into 'present'
+DEBUG:   [              35]	<< requesting vendor ID of 'TV' (0)
+TRAFFIC: [              35]	<< e0:8c
+TRAFFIC: [             236]	>> 0f:87:00:00:f0
+DEBUG:   [             236]	>> TV (0) -> Broadcast (F): device vendor id (87)
+DEBUG:   [             236]	TV (0): vendor = Samsung (0000f0)
+DEBUG:   [             236]	expected response received (87: device vendor id)
+DEBUG:   [             236]	replacing the command handler for device 'TV' (0)
+NOTICE:  [             237]	registering new CEC client - v4.0.2
+DEBUG:   [             237]	detecting logical address for type 'recording device'
+DEBUG:   [             237]	trying logical address 'Recorder 1'
+DEBUG:   [             237]	<< Recorder 1 (1) -> Recorder 1 (1): POLL
+TRAFFIC: [             237]	<< 11
+TRAFFIC: [             510]	<< 11
+DEBUG:   [             780]	>> POLL not sent
+DEBUG:   [             780]	using logical address 'Recorder 1'
+DEBUG:   [             780]	Recorder 1 (1): device status changed into 'handled by libCEC'
+DEBUG:   [             781]	Recorder 1 (1): power status changed from 'unknown' to 'on'
+DEBUG:   [             781]	Recorder 1 (1): vendor = Pulse Eight (001582)
+DEBUG:   [             781]	Recorder 1 (1): CEC version 1.4
+DEBUG:   [             781]	AllocateLogicalAddresses - device '0', type 'recording device', LA '1'
+DEBUG:   [             781]	logical address changed to Recorder 1 (1)
+DEBUG:   [             781]	Recorder 1 (1): osd name set to 'CECTester'
+DEBUG:   [             781]	Recorder 1 (1): menu language set to 'eng'
+DEBUG:   [             781]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [             781]	AutodetectPhysicalAddress - autodetected physical address '1000'
+DEBUG:   [             781]	Recorder 1 (1): physical address changed from ffff to 1000
+DEBUG:   [             781]	<< Recorder 1 (1) -> broadcast (F): physical address 1000
+TRAFFIC: [             781]	<< 1f:84:10:00:01
+NOTICE:  [             932]	CEC client registered: libCEC version = 4.0.2, client version = 4.0.2, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 1.0.0.0, git revision: libcec-4.0.2+8-8563411~dirty, compiled on Sun Apr  2 17:04:01 UTC 2017 by root@hostname: Name or service not known on Linux 4.4.0-57-generic (armv7l), features: P8_USB, DRM, P8_detect, randr, RPi
+DEBUG:   [             932]	<< Recorder 1 (1) -> TV (0): OSD name 'CECTester'
+TRAFFIC: [             933]	<< 10:47:43:45:43:54:65:73:74:65:72
+DEBUG:   [            1233]	<< requesting power status of 'TV' (0)
+TRAFFIC: [            1233]	<< 10:8f
+TRAFFIC: [            1376]	>> 01:90:00
+DEBUG:   [            1376]	>> TV (0) -> Recorder 1 (1): report power status (90)
+DEBUG:   [            1376]	TV (0): power status changed from 'unknown' to 'on'
+waiting for input
+DEBUG:   [            1376]	expected response received (90: report power status)
+TRAFFIC: [            1377]	<< 10
+waiting for input
+TRAFFIC: [            4369]	>> 0f:36
+DEBUG:   [            4370]	>> TV (0) -> Broadcast (F): standby (36)
+DEBUG:   [            4370]	TV (0): power status changed from 'on' to 'standby'
+TRAFFIC: [            4484]	>> 0f:36
+DEBUG:   [            4991]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [            4991]	physical address unchanged (1000)
+DEBUG:   [           10946]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [           10946]	physical address unchanged (1000)
+DEBUG:   [           16691]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [           16691]	physical address unchanged (1000)
+TRAFFIC: [           17438]	>> 0f:32:68:75:6e
+DEBUG:   [           17438]	TV (0): power status changed from 'standby' to 'on'
+DEBUG:   [           17438]	TV (0): menu language set to 'hun'
+DEBUG:   [           17438]	>> TV (0) -> Broadcast (F): set menu language (32)
+TRAFFIC: [           20075]	>> 01:46
+DEBUG:   [           20075]	>> TV (0) -> Recorder 1 (1): give osd name (46)
+DEBUG:   [           20076]	<< Recorder 1 (1) -> TV (0): OSD name 'CECTester'
+TRAFFIC: [           20076]	<< 10:47:43:45:43:54:65:73:74:65:72
+TRAFFIC: [           20470]	>> 01:8c
+DEBUG:   [           20470]	>> TV (0) -> Recorder 1 (1): give device vendor id (8C)
+DEBUG:   [           20470]	<< Recorder 1 (1) -> TV (0): vendor id Pulse Eight (1582)
+TRAFFIC: [           20471]	<< 1f:87:00:15:82
+TRAFFIC: [           20772]	>> 01:a0:00:00:f0:23
+DEBUG:   [           20772]	>> TV (0) -> Recorder 1 (1): vendor command with id (A0)
+TRAFFIC: [           20773]	<< 10:a0:00:00:f0:24:00:80
+TRAFFIC: [           21052]	>> 01:9f
+DEBUG:   [           21052]	>> TV (0) -> Recorder 1 (1): get cec version (9F)
+DEBUG:   [           21052]	<< Recorder 1 (1) -> TV (0): cec version 1.4
+TRAFFIC: [           21052]	<< 10:9e:05
+TRAFFIC: [           21205]	>> 01:83
+DEBUG:   [           21205]	>> TV (0) -> Recorder 1 (1): give physical address (83)
+DEBUG:   [           21205]	<< Recorder 1 (1) -> broadcast (F): physical address 1000
+TRAFFIC: [           21205]	<< 1f:84:10:00:01
+TRAFFIC: [           21572]	>> 0f:80:00:00:10:00
+DEBUG:   [           21573]	>> TV (0) -> Broadcast (F): routing change (80)
+DEBUG:   [           21573]	making Recorder 1 (1) the active source
+NOTICE:  [           21573]	>> source activated: Recorder 1 (1)
+DEBUG:   [           21573]	sending active source message for 'Recorder 1'
+NOTICE:  [           21573]	<< powering on 'TV' (0)
+TRAFFIC: [           21574]	<< 10:04
+NOTICE:  [           21664]	<< Recorder 1 (1) -> broadcast (F): active source (1000)
+TRAFFIC: [           21664]	<< 1f:82:10:00
+DEBUG:   [           21815]	<< Recorder 1 (1) -> TV (0): menu state 'activated'
+TRAFFIC: [           21815]	<< 10:8e:00
+TRAFFIC: [           21910]	>> 0f:85
+DEBUG:   [           21910]	>> TV (0) -> Broadcast (F): request active source (85)
+DEBUG:   [           21911]	>> 0 requests active source
+NOTICE:  [           21911]	<< Recorder 1 (1) -> broadcast (F): active source (1000)
+TRAFFIC: [           21911]	<< 1f:82:10:00
+TRAFFIC: [           22122]	>> 01:8d:02
+DEBUG:   [           22122]	>> TV (0) -> Recorder 1 (1): menu request (8D)
+DEBUG:   [           22122]	<< Recorder 1 (1) -> TV (0): menu state 'activated'
+TRAFFIC: [           22122]	<< 10:8e:00
+TRAFFIC: [           22303]	>> 01:1a:01
+DEBUG:   [           22303]	>> TV (0) -> Recorder 1 (1): give deck status (1A)
+DEBUG:   [           22303]	<< Recorder 1 (1) -> TV (0): deck status 'stop'
+TRAFFIC: [           22303]	<< 10:1b:1a
+TRAFFIC: [           22484]	>> 01:8d:02
+DEBUG:   [           22485]	>> TV (0) -> Recorder 1 (1): menu request (8D)
+DEBUG:   [           22485]	<< Recorder 1 (1) -> TV (0): menu state 'activated'
+TRAFFIC: [           22485]	<< 10:8e:00
+TRAFFIC: [           23031]	>> 01:44:21
+DEBUG:   [           23031]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           23031]	SetCurrentButton 1 (21) D:0ms cur:10e1a48
+DEBUG:   [           23032]	key pressed: 1 (21) current(ff) duration(0)
+DEBUG:   [           23032]	Changed key 1 (21) D:0ms cur:ff
+DEBUG:   [           23032]	key pressed: 1 (21, 0)
+DEBUG:   [           23032]	CheckKeypressTimeout T:27385.110
+DEBUG:   [           23032]	Key 1: idle (duration:0) (21) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           23101]	>> 01:8b:21
+DEBUG:   [           23101]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           23101]	key released: 1 (21) D:69ms
+TRAFFIC: [           24409]	>> 01:44:22
+DEBUG:   [           24409]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           24409]	SetCurrentButton 2 (22) D:0ms cur:10e1a48
+DEBUG:   [           24409]	key pressed: 2 (22) current(ff) duration(0)
+DEBUG:   [           24409]	Changed key 2 (22) D:0ms cur:ff
+DEBUG:   [           24409]	key pressed: 2 (22, 0)
+DEBUG:   [           24410]	CheckKeypressTimeout T:27386.488
+DEBUG:   [           24410]	Key 2: idle (duration:0) (22) timeout:17703048ms (rel:499,rep:0,prs:499,rel:0)
+TRAFFIC: [           24478]	>> 01:8b:22
+DEBUG:   [           24479]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           24479]	key released: 2 (22) D:70ms
+TRAFFIC: [           25740]	>> 01:44:23
+DEBUG:   [           25740]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           25740]	SetCurrentButton 3 (23) D:0ms cur:10e1a48
+DEBUG:   [           25742]	key pressed: 3 (23) current(ff) duration(0)
+DEBUG:   [           25742]	Changed key 3 (23) D:0ms cur:ff
+DEBUG:   [           25742]	key pressed: 3 (23, 0)
+DEBUG:   [           25742]	CheckKeypressTimeout T:27387.820
+DEBUG:   [           25742]	Key 3: idle (duration:0) (23) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           25810]	>> 01:8b:23
+DEBUG:   [           25810]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           25810]	key released: 3 (23) D:68ms
+TRAFFIC: [           31216]	>> 01:44:24
+DEBUG:   [           31216]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           31216]	SetCurrentButton 4 (24) D:0ms cur:10e1a48
+DEBUG:   [           31216]	key pressed: 4 (24) current(ff) duration(0)
+DEBUG:   [           31217]	Changed key 4 (24) D:0ms cur:ff
+DEBUG:   [           31217]	key pressed: 4 (24, 0)
+DEBUG:   [           31217]	CheckKeypressTimeout T:27393.295
+DEBUG:   [           31217]	Key 4: idle (duration:0) (24) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           31286]	>> 01:8b:24
+DEBUG:   [           31286]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           31287]	key released: 4 (24) D:70ms
+TRAFFIC: [           32325]	>> 01:44:25
+DEBUG:   [           32326]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           32326]	SetCurrentButton 5 (25) D:0ms cur:10e1a48
+DEBUG:   [           32326]	key pressed: 5 (25) current(ff) duration(0)
+DEBUG:   [           32326]	Changed key 5 (25) D:0ms cur:ff
+DEBUG:   [           32326]	key pressed: 5 (25, 0)
+DEBUG:   [           32326]	CheckKeypressTimeout T:27394.404
+DEBUG:   [           32327]	Key 5: idle (duration:0) (25) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           32395]	>> 01:8b:25
+DEBUG:   [           32396]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           32396]	key released: 5 (25) D:70ms
+TRAFFIC: [           33789]	>> 01:44:26
+DEBUG:   [           33790]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           33790]	SetCurrentButton 6 (26) D:0ms cur:10e1a48
+DEBUG:   [           33790]	key pressed: 6 (26) current(ff) duration(0)
+DEBUG:   [           33790]	Changed key 6 (26) D:0ms cur:ff
+DEBUG:   [           33790]	key pressed: 6 (26, 0)
+DEBUG:   [           33790]	CheckKeypressTimeout T:27395.868
+DEBUG:   [           33791]	Key 6: idle (duration:0) (26) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           33859]	>> 01:8b:26
+DEBUG:   [           33859]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           33860]	key released: 6 (26) D:70ms
+TRAFFIC: [           36912]	>> 01:44:27
+DEBUG:   [           36913]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           36913]	SetCurrentButton 7 (27) D:0ms cur:10e1a48
+DEBUG:   [           36913]	key pressed: 7 (27) current(ff) duration(0)
+DEBUG:   [           36913]	Changed key 7 (27) D:0ms cur:ff
+DEBUG:   [           36913]	key pressed: 7 (27, 0)
+DEBUG:   [           36914]	CheckKeypressTimeout T:27398.991
+DEBUG:   [           36914]	Key 7: idle (duration:0) (27) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           36983]	>> 01:8b:27
+DEBUG:   [           36984]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           36984]	key released: 7 (27) D:71ms
+TRAFFIC: [           38313]	>> 01:44:28
+DEBUG:   [           38313]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           38313]	SetCurrentButton 8 (28) D:0ms cur:10e1a48
+DEBUG:   [           38314]	key pressed: 8 (28) current(ff) duration(0)
+DEBUG:   [           38314]	Changed key 8 (28) D:0ms cur:ff
+DEBUG:   [           38314]	key pressed: 8 (28, 0)
+DEBUG:   [           38314]	CheckKeypressTimeout T:27400.392
+DEBUG:   [           38314]	Key 8: idle (duration:0) (28) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+TRAFFIC: [           38383]	>> 01:8b:28
+DEBUG:   [           38383]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           38383]	key released: 8 (28) D:69ms
+TRAFFIC: [           39611]	>> 01:44:29
+DEBUG:   [           39611]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+DEBUG:   [           39611]	SetCurrentButton 9 (29) D:0ms cur:10e1a48
+DEBUG:   [           39611]	key pressed: 9 (29) current(ff) duration(0)
+DEBUG:   [           39611]	Changed key 9 (29) D:0ms cur:ff
+DEBUG:   [           39611]	key pressed: 9 (29, 0)
+DEBUG:   [           39612]	CheckKeypressTimeout T:27401.690
+DEBUG:   [           39612]	Key 9: idle (duration:0) (29) timeout:17703048ms (rel:499,rep:0,prs:499,rel:0)
+TRAFFIC: [           39680]	>> 01:8b:29
+DEBUG:   [           39681]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+DEBUG:   [           39681]	key released: 9 (29) D:70ms
+TRAFFIC: [           41240]	>> 01:44:20
+DEBUG:   [           41241]	SetCurrentButton 0 (20) D:0ms cur:10e1a48
+DEBUG:   [           41241]	key pressed: 0 (20) current(ff) duration(0)
+DEBUG:   [           41241]	Changed key 0 (20) D:0ms cur:ff
+DEBUG:   [           41241]	key pressed: 0 (20, 0)
+DEBUG:   [           41241]	CheckKeypressTimeout T:27403.319
+DEBUG:   [           41241]	Key 0: idle (duration:0) (20) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           41241]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           41310]	>> 01:8b:20
+DEBUG:   [           41310]	key released: 0 (20) D:69ms
+DEBUG:   [           41310]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           43441]	>> 01:44:32
+DEBUG:   [           43441]	SetCurrentButton previous channel (32) D:0ms cur:10e1a48
+DEBUG:   [           43441]	key pressed: previous channel (32) current(ff) duration(0)
+DEBUG:   [           43441]	Changed key previous channel (32) D:0ms cur:ff
+DEBUG:   [           43441]	key pressed: previous channel (32, 0)
+DEBUG:   [           43441]	CheckKeypressTimeout T:27405.519
+DEBUG:   [           43441]	Key previous channel: idle (duration:0) (32) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           43441]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           43510]	>> 01:8b:32
+DEBUG:   [           43510]	key released: previous channel (32) D:69ms
+DEBUG:   [           43511]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           45254]	>> 01:44:00
+DEBUG:   [           45254]	SetCurrentButton select (0) D:0ms cur:10e1a48
+DEBUG:   [           45254]	key pressed: select (0) current(ff) duration(0)
+DEBUG:   [           45254]	Changed key select (0) D:0ms cur:ff
+DEBUG:   [           45254]	key pressed: select (0, 0)
+DEBUG:   [           45254]	CheckKeypressTimeout T:27407.332
+DEBUG:   [           45254]	Key select: idle (duration:0) (0) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           45254]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           45323]	>> 01:8b:00
+DEBUG:   [           45323]	key released: select (0) D:69ms
+DEBUG:   [           45323]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           46731]	>> 01:44:30
+DEBUG:   [           46731]	SetCurrentButton channel up (30) D:0ms cur:10e1a48
+DEBUG:   [           46731]	key pressed: channel up (30) current(ff) duration(0)
+DEBUG:   [           46731]	Changed key channel up (30) D:0ms cur:ff
+DEBUG:   [           46731]	key pressed: channel up (30, 0)
+DEBUG:   [           46731]	CheckKeypressTimeout T:27408.809
+DEBUG:   [           46731]	Key channel up: idle (duration:0) (30) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           46731]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           46800]	>> 01:8b:30
+DEBUG:   [           46801]	key released: channel up (30) D:70ms
+DEBUG:   [           46801]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           47424]	>> 01:44:30
+DEBUG:   [           47424]	SetCurrentButton channel up (30) D:0ms cur:10e1a48
+DEBUG:   [           47424]	key pressed: channel up (30) current(ff) duration(0)
+DEBUG:   [           47424]	Changed key channel up (30) D:0ms cur:ff
+DEBUG:   [           47424]	key pressed: channel up (30, 0)
+DEBUG:   [           47424]	CheckKeypressTimeout T:27409.502
+DEBUG:   [           47424]	Key channel up: idle (duration:0) (30) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           47424]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           47493]	>> 01:8b:30
+DEBUG:   [           47493]	key released: channel up (30) D:69ms
+DEBUG:   [           47494]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           47587]	>> 01:44:30
+DEBUG:   [           47587]	SetCurrentButton channel up (30) D:0ms cur:10e1a48
+DEBUG:   [           47587]	key pressed: channel up (30) current(ff) duration(0)
+DEBUG:   [           47587]	Changed key channel up (30) D:0ms cur:ff
+DEBUG:   [           47587]	key pressed: channel up (30, 0)
+DEBUG:   [           47587]	CheckKeypressTimeout T:27409.665
+DEBUG:   [           47587]	Key channel up: idle (duration:0) (30) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           47587]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           47656]	>> 01:8b:30
+DEBUG:   [           47656]	key released: channel up (30) D:69ms
+DEBUG:   [           47657]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           47976]	>> 01:44:31
+DEBUG:   [           47976]	SetCurrentButton channel down (31) D:0ms cur:10e1a48
+DEBUG:   [           47976]	key pressed: channel down (31) current(ff) duration(0)
+DEBUG:   [           47976]	Changed key channel down (31) D:0ms cur:ff
+DEBUG:   [           47976]	key pressed: channel down (31, 0)
+DEBUG:   [           47976]	CheckKeypressTimeout T:27410.054
+DEBUG:   [           47976]	Key channel down: idle (duration:0) (31) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           47976]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           48046]	>> 01:8b:31
+DEBUG:   [           48046]	key released: channel down (31) D:70ms
+DEBUG:   [           48046]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           48663]	>> 01:44:31
+DEBUG:   [           48663]	SetCurrentButton channel down (31) D:0ms cur:10e1a48
+DEBUG:   [           48663]	key pressed: channel down (31) current(ff) duration(0)
+DEBUG:   [           48663]	Changed key channel down (31) D:0ms cur:ff
+DEBUG:   [           48663]	key pressed: channel down (31, 0)
+DEBUG:   [           48663]	CheckKeypressTimeout T:27410.741
+DEBUG:   [           48663]	Key channel down: idle (duration:0) (31) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           48663]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           48733]	>> 01:8b:31
+DEBUG:   [           48733]	key released: channel down (31) D:70ms
+DEBUG:   [           48733]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           48826]	>> 01:44:31
+DEBUG:   [           48826]	SetCurrentButton channel down (31) D:0ms cur:10e1a48
+DEBUG:   [           48826]	key pressed: channel down (31) current(ff) duration(0)
+DEBUG:   [           48826]	Changed key channel down (31) D:0ms cur:ff
+DEBUG:   [           48826]	key pressed: channel down (31, 0)
+DEBUG:   [           48826]	CheckKeypressTimeout T:27410.904
+DEBUG:   [           48826]	Key channel down: idle (duration:0) (31) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           48826]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           48896]	>> 01:8b:31
+DEBUG:   [           48896]	key released: channel down (31) D:70ms
+DEBUG:   [           48896]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           48966]	>> 01:8b:31
+DEBUG:   [           48966]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           49036]	>> 01:8b:31
+DEBUG:   [           49036]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           50598]	>> 01:44:01
+DEBUG:   [           50598]	SetCurrentButton up (1) D:0ms cur:10e1a48
+DEBUG:   [           50598]	key pressed: up (1) current(ff) duration(0)
+DEBUG:   [           50598]	Changed key up (1) D:0ms cur:ff
+DEBUG:   [           50598]	key pressed: up (1, 0)
+DEBUG:   [           50598]	CheckKeypressTimeout T:27412.676
+DEBUG:   [           50598]	Key up: idle (duration:0) (1) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           50599]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           50668]	>> 01:8b:01
+DEBUG:   [           50668]	key released: up (1) D:70ms
+DEBUG:   [           51004]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           51283]	>> 01:44:01
+DEBUG:   [           51283]	SetCurrentButton up (1) D:0ms cur:10e1a48
+DEBUG:   [           51283]	key pressed: up (1) current(ff) duration(0)
+DEBUG:   [           51283]	Changed key up (1) D:0ms cur:ff
+DEBUG:   [           51283]	key pressed: up (1, 0)
+DEBUG:   [           51283]	CheckKeypressTimeout T:27413.361
+DEBUG:   [           51283]	Key up: idle (duration:0) (1) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           51283]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           51352]	>> 01:8b:01
+DEBUG:   [           51353]	key released: up (1) D:70ms
+DEBUG:   [           51353]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           51904]	>> 01:44:02
+DEBUG:   [           51904]	SetCurrentButton down (2) D:0ms cur:10e1a48
+DEBUG:   [           51904]	key pressed: down (2) current(ff) duration(0)
+DEBUG:   [           51904]	Changed key down (2) D:0ms cur:ff
+DEBUG:   [           51904]	key pressed: down (2, 0)
+DEBUG:   [           51904]	CheckKeypressTimeout T:27413.982
+DEBUG:   [           51904]	Key down: idle (duration:0) (2) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           51904]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           51973]	>> 01:8b:02
+DEBUG:   [           51973]	key released: down (2) D:69ms
+DEBUG:   [           51974]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           52603]	>> 01:44:02
+DEBUG:   [           52603]	SetCurrentButton down (2) D:0ms cur:10e1a48
+DEBUG:   [           52603]	key pressed: down (2) current(ff) duration(0)
+DEBUG:   [           52603]	Changed key down (2) D:0ms cur:ff
+DEBUG:   [           52603]	key pressed: down (2, 0)
+DEBUG:   [           52603]	CheckKeypressTimeout T:27414.681
+DEBUG:   [           52603]	Key down: idle (duration:0) (2) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           52604]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           52673]	>> 01:8b:02
+DEBUG:   [           52673]	key released: down (2) D:70ms
+DEBUG:   [           52673]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           53055]	>> 01:44:03
+DEBUG:   [           53055]	SetCurrentButton left (3) D:0ms cur:10e1a48
+DEBUG:   [           53056]	key pressed: left (3) current(ff) duration(0)
+DEBUG:   [           53056]	Changed key left (3) D:0ms cur:ff
+DEBUG:   [           53056]	key pressed: left (3, 0)
+DEBUG:   [           53056]	CheckKeypressTimeout T:27415.134
+DEBUG:   [           53056]	Key left: idle (duration:0) (3) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           53056]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           53125]	>> 01:8b:03
+DEBUG:   [           53125]	key released: left (3) D:69ms
+DEBUG:   [           53126]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           54143]	>> 01:44:04
+DEBUG:   [           54143]	SetCurrentButton right (4) D:0ms cur:10e1a48
+DEBUG:   [           54143]	key pressed: right (4) current(ff) duration(0)
+DEBUG:   [           54143]	Changed key right (4) D:0ms cur:ff
+DEBUG:   [           54143]	key pressed: right (4, 0)
+DEBUG:   [           54143]	CheckKeypressTimeout T:27416.221
+DEBUG:   [           54143]	Key right: idle (duration:0) (4) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           54143]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           54212]	>> 01:8b:04
+DEBUG:   [           54213]	key released: right (4) D:70ms
+DEBUG:   [           54213]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           55529]	>> 01:44:00
+DEBUG:   [           55529]	SetCurrentButton select (0) D:0ms cur:10e1a48
+DEBUG:   [           55529]	key pressed: select (0) current(ff) duration(0)
+DEBUG:   [           55529]	Changed key select (0) D:0ms cur:ff
+DEBUG:   [           55529]	key pressed: select (0, 0)
+DEBUG:   [           55529]	CheckKeypressTimeout T:27417.607
+DEBUG:   [           55529]	Key select: idle (duration:0) (0) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           55530]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           55599]	>> 01:8b:00
+DEBUG:   [           55599]	key released: select (0) D:70ms
+DEBUG:   [           55599]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           57538]	>> 01:44:72
+DEBUG:   [           57538]	SetCurrentButton F2 (red) (72) D:0ms cur:10e1a48
+DEBUG:   [           57538]	key pressed: F2 (red) (72) current(ff) duration(0)
+DEBUG:   [           57538]	Changed key F2 (red) (72) D:0ms cur:ff
+DEBUG:   [           57538]	key pressed: F2 (red) (72, 0)
+DEBUG:   [           57538]	CheckKeypressTimeout T:27419.616
+DEBUG:   [           57538]	Key F2 (red): idle (duration:0) (72) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           57538]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           57608]	>> 01:8b:72
+DEBUG:   [           57608]	key released: F2 (red) (72) D:70ms
+DEBUG:   [           57608]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           58617]	>> 01:44:73
+DEBUG:   [           58617]	SetCurrentButton F3 (green) (73) D:0ms cur:10e1a48
+DEBUG:   [           58617]	key pressed: F3 (green) (73) current(ff) duration(0)
+DEBUG:   [           58617]	Changed key F3 (green) (73) D:0ms cur:ff
+DEBUG:   [           58617]	key pressed: F3 (green) (73, 0)
+DEBUG:   [           58617]	CheckKeypressTimeout T:27420.695
+DEBUG:   [           58617]	Key F3 (green): idle (duration:0) (73) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           58617]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           58690]	>> 01:8b:73
+DEBUG:   [           58690]	key released: F3 (green) (73) D:73ms
+DEBUG:   [           58690]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           59656]	>> 01:44:74
+DEBUG:   [           59656]	SetCurrentButton F4 (yellow) (74) D:0ms cur:10e1a48
+DEBUG:   [           59656]	key pressed: F4 (yellow) (74) current(ff) duration(0)
+DEBUG:   [           59656]	Changed key F4 (yellow) (74) D:0ms cur:ff
+DEBUG:   [           59656]	key pressed: F4 (yellow) (74, 0)
+DEBUG:   [           59656]	CheckKeypressTimeout T:27421.734
+DEBUG:   [           59656]	Key F4 (yellow): idle (duration:0) (74) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           59657]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           59726]	>> 01:8b:74
+DEBUG:   [           59726]	key released: F4 (yellow) (74) D:70ms
+DEBUG:   [           59726]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           60702]	>> 01:44:71
+DEBUG:   [           60702]	SetCurrentButton F1 (blue) (71) D:0ms cur:10e1a48
+DEBUG:   [           60702]	key pressed: F1 (blue) (71) current(ff) duration(0)
+DEBUG:   [           60703]	Changed key F1 (blue) (71) D:0ms cur:ff
+DEBUG:   [           60703]	key pressed: F1 (blue) (71, 0)
+DEBUG:   [           60703]	CheckKeypressTimeout T:27422.781
+DEBUG:   [           60703]	Key F1 (blue): idle (duration:0) (71) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           60703]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           60772]	>> 01:8b:71
+DEBUG:   [           60773]	key released: F1 (blue) (71) D:70ms
+DEBUG:   [           60773]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           63108]	>> 01:8a:96
+DEBUG:   [           63108]	key pressed: channels list (Samsung) (96) current(ff) duration(500)
+DEBUG:   [           63108]	Changed key channels list (Samsung) (96) D:500ms cur:ff
+DEBUG:   [           63108]	key pressed: channels list (Samsung) (96, 500)
+DEBUG:   [           63109]	>> TV (0) -> Recorder 1 (1): vendor remote button down (8A)
+TRAFFIC: [           63178]	>> 01:8b:71
+DEBUG:   [           63178]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           65165]	>> 01:44:00
+DEBUG:   [           65165]	SetCurrentButton select (0) D:0ms cur:10e1a48
+DEBUG:   [           65165]	key pressed: select (0) current(ff) duration(0)
+DEBUG:   [           65165]	Changed key select (0) D:0ms cur:ff
+DEBUG:   [           65165]	key pressed: select (0, 0)
+DEBUG:   [           65165]	CheckKeypressTimeout T:27427.243
+DEBUG:   [           65165]	Key select: idle (duration:0) (0) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           65165]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           65234]	>> 01:8b:00
+DEBUG:   [           65235]	key released: select (0) D:70ms
+DEBUG:   [           65235]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+TRAFFIC: [           66507]	>> 01:44:32
+DEBUG:   [           66507]	SetCurrentButton previous channel (32) D:0ms cur:10e1a48
+DEBUG:   [           66507]	key pressed: previous channel (32) current(ff) duration(0)
+DEBUG:   [           66507]	Changed key previous channel (32) D:0ms cur:ff
+DEBUG:   [           66507]	key pressed: previous channel (32, 0)
+DEBUG:   [           66507]	CheckKeypressTimeout T:27428.585
+DEBUG:   [           66507]	Key previous channel: idle (duration:0) (32) timeout:17703048ms (rel:500,rep:0,prs:500,rel:0)
+DEBUG:   [           66508]	>> TV (0) -> Recorder 1 (1): user control pressed (44)
+TRAFFIC: [           66577]	>> 01:8b:32
+DEBUG:   [           66577]	key released: previous channel (32) D:70ms
+DEBUG:   [           66577]	>> TV (0) -> Recorder 1 (1): vendor remote button up (8B)
+signal caught: 2 - exiting
+DEBUG:   [           74012]	unregistering all CEC clients
+NOTICE:  [           74012]	unregistering client: libCEC version = 4.0.2, client version = 4.0.2, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 1.0.0.0, git revision: libcec-4.0.2+8-8563411~dirty, compiled on Sun Apr  2 17:04:01 UTC 2017 by root@hostname: Name or service not known on Linux 4.4.0-57-generic (armv7l), features: P8_USB, DRM, P8_detect, randr, RPi
+DEBUG:   [           74012]	Recorder 1 (1): power status changed from 'on' to 'unknown'
+DEBUG:   [           74012]	Recorder 1 (1): vendor = Unknown (000000)
+DEBUG:   [           74012]	Recorder 1 (1): CEC version unknown
+DEBUG:   [           74012]	Recorder 1 (1): osd name set to 'Recorder 1'
+DEBUG:   [           74012]	marking Recorder 1 (1) as inactive source
+DEBUG:   [           74012]	Recorder 1 (1): device status changed into 'unknown'
+DEBUG:   [           74012]	unregistering all CEC clients
+DEBUG:   [           75013]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [           75013]	logical address changed to Broadcast (f)
