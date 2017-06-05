@@ -18,9 +18,7 @@ public class Main {
 
 	private Process process;
 
-	private CecService service;
-
-	public static void main(String... argv) {
+	public static void main(String... argv) throws IOException {
 		Main main = new Main();
 		JCommander build = JCommander.newBuilder().addObject(main).build();
 		build.parse(argv);
@@ -29,6 +27,8 @@ public class Main {
 			return;
 		}
 		main.run();
+		
+		System.in.read();
 	}
 
 	public void run() {
