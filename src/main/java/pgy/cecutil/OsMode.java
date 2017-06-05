@@ -28,7 +28,7 @@ public class OsMode {
 			robot.keyPress(keycode);
 		} else if (type.equals(CecEvent.Type.KEY_RELEASED)) {
 			int keycode = getKeycode(e.getData());
-			robot.keyPress(keycode);
+			robot.keyRelease(keycode);
 		}
 	}
 
