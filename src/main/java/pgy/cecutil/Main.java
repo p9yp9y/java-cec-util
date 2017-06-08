@@ -3,13 +3,11 @@ package pgy.cecutil;
 import java.awt.AWTException;
 import java.io.IOException;
 
-import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 
+import pgy.master.util.JCommanderUtil;
+
 public class Main {
-	@Parameter(names = "--help", help = true)
-	private boolean help;
-	
 	@Parameter(names = { "--osmode", "-osmode" }, description="OS mode")
 	boolean osmode;
 
@@ -18,14 +16,9 @@ public class Main {
 
 	private Process process;
 
-	public static void main(String... argv) throws IOException {
+	public static void main(String[] args) throws IOException {
 		Main main = new Main();
-		JCommander build = JCommander.newBuilder().addObject(main).build();
-		build.parse(argv);
-		if(main.help) {
-			build.usage();
-			return;
-		}
+		JCommanderUtil.parseArgs(main, args);
 		main.run();
 		
 		System.in.read();
