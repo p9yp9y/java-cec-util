@@ -1,3 +1,3 @@
 language: java
 
-install: "mvn clean"
+install: "git clone --depth=50 --branch=master https://github.com/p9yp9y/pgy-master.git p9yp9y/pgy-master;cd pgy-master;mvn install;cd .."
